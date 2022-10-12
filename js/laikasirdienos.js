@@ -6,21 +6,42 @@ console.log('laikas.js')
 // 19-23 = vakaras 
 // 24 - 5 = naktis
 
-let laikas = 2;
+// let laikas = 2;
 
-if (laikas >= 6 && laikas <= 12){
-    console.log('labas rytas');
-}else if(laikas >= 13 && laikas <= 18){
+// if (laikas >= 6 && laikas <= 12){
+//     console.log('labas rytas');
+// }else if(laikas >= 13 && laikas <= 18){
+//     console.log('laba diena');
+// }else if(laikas >= 19 && laikas <= 23){
+//     console.log('labas vakaras')
+// }else if(laikas = 24 && laikas <= 5){
+//     console.log('labanakt')
+// }
+
+// switch--
+
+let laikas = 11;
+// debugger;
+switch (true) {
+  case laikas === 24:
+    console.log('labanakt');
+    break;
+  case laikas >= 19:
+    console.log('labas vakaras');
+    break;
+  case laikas >= 13:
     console.log('laba diena');
-}else if(laikas >= 19 && laikas <= 23){
-    console.log('labas vakaras')
-}else if(laikas = 24 && laikas <= 5){
-    console.log('labanakt')
-}
+    break;
+  case laikas > 6:
+    console.log('labas rytas');
+    break;
+  case laikas > 0:
+    console.log('labanakt');
+    break;
 
 // =======
 
-let diena = Math.floor(Math.random() * 7) + 1
+    let diena = Math.floor(Math.random() * 7) + 1
     console.log(diena);
 
     // if (diena === 1 ){
@@ -66,3 +87,4 @@ let diena = Math.floor(Math.random() * 7) + 1
         default:
             console.log('Neteisinga diena');
     }
+}
